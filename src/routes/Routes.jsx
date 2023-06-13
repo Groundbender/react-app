@@ -13,6 +13,7 @@ const Router = () => {
 		<BrowserRouter>
 			<Routes>
 				{routes.map(route => {
+					// if (роут для авторизированных пользователей и пользователь не авторизирован) return false
 					if (route.isAuth && !isAuth) {
 						return false
 					}
